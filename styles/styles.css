@@ -1,14 +1,37 @@
-*{
-    margin: 200px;
-}
+ /* Three image containers (use 25% for four, and 50% for two, etc)
+ /* .column {
+    float: left;
+    /* width: 33.33%;
+    width: 27%;
+    padding: 5px;
+    border: 10px solid navy;
+    margin: 10px;
+  } */
+  
+  /* Clear floats after image containers */
+  /* .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  } */
 
-.image-container{
+  /* img{
+    height: 100%;
+    width: 100%;
+  } */ 
+
+//* Flexbox example *//
+
+  .row {
     display: flex;
-    margin: 20%;
-    border: 100px;
-}
+  }
+  
+  .column {
+    flex: 33.33%;
+    padding: 5px;
+  }
 
-.image-container img{
-    width: 33.33%;
-    height: 100px;
-}
+  img{
+    height: 20%;
+    width: 20%;
+  }
